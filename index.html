@@ -1,13 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
+        <title>Examen - App statique</title>
     </head>
-    <body>
-        <h1 class="text-red-500">test</h1>
+    <body class="md:min-h-screen flex flex-col bg-gray-100 text-gray-900">
+        <header>
+            <nav class="pb-4">
+                <a href="#" class="flex md:absolute p-8">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-circle-slash2-icon lucide-circle-slash-2"
+                    >
+                        <path d="M22 2 2 22" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                </a>
+
+                <ul
+                    id="menu-wrapper"
+                    class="hidden flex-col bg-white rounded-lg m-4 shadow-xl text-1xl space-y-6 text-center pt-6 pb-6 md:flex md:flex-row md:space-x-16 md:space-y-0 md:bg-gray-100 md:shadow-none md:pt-8 md:pb-2 md:p-10 md:justify-end"
+                >
+                    <li><a href="#" class="hover:text-blue-400">Ready ?</a></li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400">Not ready ?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400">Contact us !</a>
+                    </li>
+                </ul>
+
+                <a
+                    href="#"
+                    id="menu-toggle"
+                    class="absolute top-8 right-8 md:hidden"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-menu-icon lucide-menu"
+                    >
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </a>
+            </nav>
+        </header>
+
+        <main
+            class="flex-1 bg-gray-200 flex flex-col justify-center items-center"
+        >
+            <section class="text-center px-6 py-22">
+                <h1 class="text-3xl font-bold mb-2 mt-4">Ready to start?</h1>
+                <p class="text-m text-gray-700 mb-6 pb-2">
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <a
+                    href="#"
+                    class="bg-gray-800 hover:bg-gray-500 text-white text-m font-semibold py-4 px-8 rounded-full shadow-md mb-2"
+                >
+                    Get Started for Free
+                </a>
+                <p class="text-xs text-gray-400 pt-8">30 days free trial.</p>
+            </section>
+        </main>
+
+        <footer class="text-xs text-gray-400 text-left px-4 py-4 md:p-8">
+            ©2023 EAFC Fléron
+        </footer>
+
         <script type="module" src="/src/main.js"></script>
+        <script src="/src/app.js"></script>
     </body>
 </html>
